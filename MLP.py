@@ -27,7 +27,7 @@ class MultiLayerPerceptron:
     batch_size: int, optional (default = 16) 
         Size of minibatches; set as 1 for SGD and as input size for full batch mode
     
-    weights_range: string, optional (default = rand_med) 
+    weights_range: string, optional (default = norm_med) 
         Range of values weights to be selected from.  Available options are:
         norm_med : returns normally distibuted random values with a mean of 0.0 and a standard distribution of 0.3 
         norm_tiny : returns normally distibuted random values with a mean of 0.0 and a standard distribution of 0.1
