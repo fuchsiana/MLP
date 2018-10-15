@@ -18,7 +18,7 @@ class MultiLayerPerceptron:
     learning_rate: float, optional (default = 0.01)
         Learning-rate to multiplty deltas by when adjusting weights
         
-    regression: Boolean, optional (default = False) 
+    regression: Boolean, optional (default = True) 
         If true, regression model mode is on; predict method produces float values for outputs.
         If false, classifier model mode is on.  If one output unit/neuron is selected, predict method will deliver 
         1 if output is >=0.5 and 0 otherwise.  If two or more output units/neurons are selected, predict method will
@@ -52,7 +52,7 @@ class MultiLayerPerceptron:
     """
     
     # Constructor for the classifier object
-    def __init__(self, hidden_units = 8, n_outputs = 1, epochs = 1000, learning_rate = 0.01, regression = False, 
+    def __init__(self, hidden_units = 8, n_outputs = 1, epochs = 1000, learning_rate = 0.01, regression = True, 
                  batch_size = 16, weights_range = 'norm_med', sigmoid_output = False, random_seed = None, verbose = 0):
 
         self.hidden_units = hidden_units
