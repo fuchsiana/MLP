@@ -42,7 +42,7 @@ MultiLayerPerceptron() methods are:
             X : array-like, shape = [n_samples, n_features]
                 The training input samples. 
             y : array-like, shape = [n_samples] 
-                The target values (class labels) as integers or strings.            
+                The target values (class labels) as integers.            
         Returns object - the trained model
             
     predict(X), to predict class labels of the input samples X, with parameter:
